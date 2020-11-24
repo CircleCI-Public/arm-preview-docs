@@ -27,7 +27,7 @@ As these are `machine` executor resources, each class is a dedicated VM that’s
 
 Once we’ve enabled Arm resources for your organization, update your `.circleci/config.yml` file to use the Arm resource. Here is an example config:
 
-```
+```yaml
 # .circleci/config.yml
 version: 2.1
 
