@@ -8,8 +8,8 @@ CircleCI offers multiple kinds of environments for you to run jobs in. In your C
 
 We have added two resources as part of the [`machine` executor](https://circleci.com/docs/2.0/configuration-reference/#machine-executor-linux):
 
-* `arm.medium` - 2 vCPU, 8GB RAM
-* `arm.large` - 4 vCPU, 16GB RAM
+* `arm.medium` - `arm64` architecture, 2 vCPU, 8GB RAM
+* `arm.large` - `arm64` architecture, 4 vCPU, 16GB RAM
 
 As these are `machine` executor resources, each class is a dedicated VM that’s created just for your job and destroyed after the job has finished running.
 
