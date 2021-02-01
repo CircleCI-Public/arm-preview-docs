@@ -18,10 +18,15 @@ As these are `machine` executor resources, each class is a dedicated VM that’s
 **Requirements** to get access to the Arm preview:
 
 * Your organization must be a CircleCI customer on a Free, Performance, Scale, or Custom plan.
-
+  * If you have never used CircleCI before, you can [sign up for a free account](https://circleci.com/signup/).
+  
+At this moment, Arm resources are only available on our cloud offering. If you are a CircleCI Server customer, you can try out Arm resources by signing up for a free CircleCI cloud account.
+  
 **Steps** to get access:
 
-* Contact your CircleCI Customer Success Manager (CSM). If you don’t have a CSM, submit a new request in the [CircleCI Support Center](https://support.circleci.com/hc/en-us).
+* Fill out the Arm access form:
+
+### [Arm access form](https://form.asana.com/?k=S8EKGU3o66ld_qYXsdOQww&d=5374345383152)
 
 ## Using Arm resources
 
@@ -65,7 +70,7 @@ workflows:
 
 The following Arm resource class is available to all CircleCI customers:
 
-|Resource class name|Specs|Pricing|Plans where the resource is available|
+|Resource class name|Specs|Pricing|Plans on which the resource is available|
 |---|---|---|---|
 |`arm.medium`|2 vCPUs, 8GB RAM |10 credits/min| Free, Performance, Scale, Custom|
 |`arm.large` |4 vCPUs, 16GB RAM|20 credits/min| Performance, Scale              |
