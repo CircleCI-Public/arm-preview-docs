@@ -62,6 +62,7 @@ workflows:
 
 ## Limitations
 
+* We currently don’t provide support for 32-bit Arm architectures. Only 64-bit `arm64` architecture is supported.
 * There may be up to 2 mins of spin-up time before your job actually starts running. This time will decrease as more preview customers start using Arm resources.
 * Only one image is currently available, `ubuntu-2004:202011-01`. It contains most of the tools you’ll likely need, from Docker to `docker-compose` to Python to `jq`. If there is software you require that’s not available in the image, please [open an issue](https://github.com/CircleCI-Public/arm-preview-docs/issues) to let us know.
 * We may change and update the pre-installed software on the `ubuntu-2004:202011-01` image without prior notice during the preview period. Once the preview period is over, the images for Arm resources will be stable and will follow our standard image release cadence.
