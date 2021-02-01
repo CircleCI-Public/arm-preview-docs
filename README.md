@@ -17,7 +17,7 @@ As these are `machine` executor resources, each class is a dedicated VM that’s
 
 **Requirements** to get access to the Arm preview:
 
-* Your organization must have an active Performance, Scale, or Custom plan on CircleCI.
+* Your organization must be a CircleCI customer on a Free, Performance, Scale, or Custom plan.
 
 **Steps** to get access:
 
@@ -61,9 +61,14 @@ workflows:
 * Only one image is currently available, `ubuntu-2004:202011-01`. It contains most of the tools you’ll likely need, from Docker to `docker-compose` to Python to `jq`. If there is software you require that’s not available in the image, please [open an issue](https://github.com/CircleCI-Public/arm-preview-docs/issues) to let us know.
 * We may change and update the pre-installed software on the `ubuntu-2004:202011-01` image without prior notice during the preview period. Once the preview period is over, the images for Arm resources will be stable and will follow our standard image release cadence.
 
-## Pricing
+## Pricing and availability
 
-We are currently finalizing the pricing for Arm resources and will share it soon. For now, we won’t bill you for the Arm preview usage.
+The following Arm resource class is available to all CircleCI customers:
+
+|Resource class name|Specs|Pricing|Plans where the resource is available|
+|---|---|---|---|
+|`arm.medium`|2 vCPUs, 8GB RAM |10 credits/min| Free, Performance, Scale, Custom|
+|`arm.large` |4 vCPUs, 16GB RAM|20 credits/min| Performance, Scale              |
 
 ## How to provide feedback
 
