@@ -28,6 +28,8 @@ At this moment, Arm resources are only available on our cloud offering. If you a
 
 ### [Arm access form](https://form.asana.com/?k=S8EKGU3o66ld_qYXsdOQww&d=5374345383152)
 
+We will do our best to provision access within 1-2 days of receiving your access request, subject to capacity in our fleet.
+
 ## Using Arm resources
 
 Once we’ve enabled Arm resources for your organization, update your `.circleci/config.yml` file to use the Arm resource. Here is an example config:
