@@ -13,8 +13,8 @@ We have added two resources as part of the [`machine` executor](https://circleci
 
 These are the images available:
 
-* ubuntu-2004:202101-01
-* ubuntu-2004:202011-01 
+* `ubuntu-2004:202101-01` - most recent, recommended for all users
+* `ubuntu-2004:202011-01` - deprecated as of Feb 3, 2021
 
 As these are `machine` executor resources, each class is a dedicated VM that’s created just for your job and destroyed after the job has finished running.
 
