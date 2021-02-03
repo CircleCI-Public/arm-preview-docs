@@ -11,6 +11,11 @@ We have added two resources as part of the [`machine` executor](https://circleci
 * `arm.medium` - `arm64` architecture, 2 vCPU, 8GB RAM
 * `arm.large` - `arm64` architecture, 4 vCPU, 16GB RAM
 
+These are the images available:
+
+* ubuntu-2004:202101-01
+* ubuntu-2004:202011-01 
+
 As these are `machine` executor resources, each class is a dedicated VM that’s created just for your job and destroyed after the job has finished running.
 
 ## Getting access to the Arm resources
@@ -41,21 +46,20 @@ version: 2.1
 jobs:
   build-medium:
     machine:
-      image: ubuntu-2004:202011-01
+      image: ubuntu-2004:202101-01
     resource_class: arm.medium
     steps:
       - run: uname -a
       - run: echo "Hello, Arm!"
   build-large:
     machine:
-      image: ubuntu-2004:202011-01
+      image: ubuntu-2004:202101-01
     resource_class: arm.large
     steps:
       - run: uname -a
       - run: echo "Hello, Arm!"
 
 workflows:
-  version: 2
   build:
     jobs:
       - build-medium
@@ -66,7 +70,7 @@ workflows:
 
 * We currently don’t provide support for 32-bit Arm architectures. Only 64-bit `arm64` architecture is supported.
 * There may be up to 2 mins of spin-up time before your job actually starts running. This time will decrease as more preview customers start using Arm resources.
-* Only one image is currently available, `ubuntu-2004:202011-01`. It contains most of the tools you’ll likely need, from Docker to `docker-compose` to Python to `jq`. If there is software you require that’s not available in the image, please [open an issue](https://github.com/CircleCI-Public/arm-preview-docs/issues) to let us know.
+* If there is software you require that’s not available in the image, please [open an issue](https://github.com/CircleCI-Public/arm-preview-docs/issues) to let us know.
 * We may change and update the pre-installed software on the `ubuntu-2004:202011-01` image without prior notice during the preview period. Once the preview period is over, the images for Arm resources will be stable and will follow our standard image release cadence.
 
 ## Pricing and availability
